@@ -1,0 +1,1 @@
+docker container create --name mongodata --publish 27018:27017 --mount "type=bind,source=D:\Youtube_PZN\DOCKER\belajar-docker-dasar\mongo-data,destination=/data/db" --env MONGO_INITDB_ROOT_USERNAME=iko --env MONGO_INITDB_ROOT_PASSWORD=iko mongo:latest
