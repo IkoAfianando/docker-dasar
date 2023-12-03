@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="WS-213.7172.31">
-    <data-source name="@localhost" uuid="0e69f373-d52a-4246-9921-51b814cea5f6">
-      <database-info product="Mongo DB" version="5.0.8" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.14" dbms="MONGO" exact-version="5.0.8" exact-driver-version="1.14" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+  <component name="dataSourceStorageLocal" created-in="WS-232.10227.9">
+    <data-source name="postgres@localhost" uuid="9936476f-95c1-4f0c-b605-d990876e6a25">
+      <database-info product="PostgreSQL" version="16.1 (Debian 16.1-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="16.1" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>iko</user-name>
+      <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" negative="1" />
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="iko" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
